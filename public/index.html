@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,22 +8,45 @@
 </head>
 <body>
 
-    <div class="container">
-        <h1>📝 Notes App</h1>
+<div class="container">
+
+    <h1>📝 Notes App</h1>
+
+    <form id="noteForm">
+
+        <input
+            type="text"
+            id="title"
+            placeholder="Enter Title"
+            required
+        >
 
         <textarea
-            placeholder="Write your notes here..."
-            rows="8"
+            id="content"
+            placeholder="Write your note..."
+            rows="5"
+            required
         ></textarea>
 
-        <br>
+        <button type="submit">
+            Add Note
+        </button>
 
-        <button>Add Note</button>
+    </form>
 
-        <p class="footer">
-            Node.js • Docker • Kubernetes • GitHub Actions
-        </p>
+    <hr>
+
+    <h2>📒 Saved Notes</h2>
+
+    <div id="notesContainer">
+
+        <!-- Notes will appear here -->
+
     </div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
